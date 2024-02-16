@@ -3,4 +3,29 @@
 
 <head>
 <meta charset ="utf-8">
-<title>Ethan's Resume/title>
+  <title>Ethan's Resume/title>
+<style>
+body {
+  background-color: ;
+  font-family: ;
+  margin: ;
+  color: ;
+}
+
+h1 {
+  font-family: ;
+  color: ;
+}
+
+h2 {
+  font-family: ;
+  color: ;
+}
+
+</style>
+</head>
+
+<body>
+
+</body>
+</html>

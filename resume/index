@@ -2,30 +2,57 @@
 <html>
 
 <head>
-<meta charset ="utf-8">
+
   <title>Ethan's Resume/title>
+    <meta charset ="utf-8">
+  
 <style>
+
 body {
-  background-color: ;
-  font-family: ;
-  margin: ;
-  color: ;
+  background-color: #696969;
+  font-family: Verdana, sans-serif;
+  margin: 10px 10px 10px 10px;
+  color: #F8F8FF;
+  text-align: justify;
 }
 
 h1 {
-  font-family: ;
-  color: ;
+  font-family: 'Brush Script MT', cursive;
+  color: #4169E1;
+  text-align: center;
 }
 
 h2 {
-  font-family: ;
-  color: ;
+  font-family: 'Brush Script MT', cursive;
+  color: #4169E1;
+  text-align: left;
 }
 
 </style>
 </head>
 
 <body>
+  <h1> Ethan's Resume </h1>
+
+  <h2> ABOUT ME </h2>
+<p> <em> Hello! </em> My name is <strong> Ethan Howe </strong>. </p>
+<p> I am a part-time student at Seminole State College of Florida and a part-time Grocery Clerk at Publix Supermarkets.  I am seeking my Bachelor's Degree in Digital Media. </p>
+
+  <h2> SKILLS </h2>
+    <ol> <span> &#9826; </span>
+<li> Coding </li>
+    <ul> 
+  <li> HTML </li> 
+  <li> JAVASCRIPT </li>
+    </ul>
+<li> </li>
+    </ol>
+
+  <h2> SOFTWARE/HARDWARE </h2>
+
+  <h2> SOCIAL MEDIA </h2>
+
+  <h2> GALLERY </h2>
 
 </body>
 </html>

@@ -36,9 +36,26 @@ h2 {
 <h1></h1>
 
 <p>Our 12" wood-fired pizzas are available for delivery.  Build your custom pizza and we'll deliver it within an hour.</p>
-<p>Your Information</p>
-    <li><label>Name: <input type="text"> </label></li>
     
+<form action="http://www.blackgoosebistro.com/pizza.php" method="POST">
+  <fieldset>
+    <legend>Your Information</legend>
+        <ul>
+          <li><label for="form-name">Name:</label> <input type="text" name="name" id="form-name"></li>
+          <li><label for="form-address">Delivery Address:</label> <input type="text" name="address" id="form-address"></li>
+          <li><label for="form-tel">Phone Number:</label> <input type="text" name="phone" id="form-tel"></li> 
+          <li><label for="form-email">Email:</label> <input type="text" name="email" id="form-email"></li>
+            <li>
+              "Delivery Instructions:"
+              <br>
+              <textarea name="instructions" rows="4" cols="60" maxlength="400" id="form-story" placeholder="No more than 400 characters long"></textarea>
+            </li>
+        </ul>
+  </fieldset>
+
+<h2>Design Your Dream Pizza!</h2>
+
+  
 <p><input type="submit" value="Bring me a pizza!"><input type="reset"></p>    
   </body>
 </html>

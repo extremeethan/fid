@@ -4,47 +4,50 @@
 <head>
     <meta charset="utf-8">
     <title>OX'SPLODE</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
-      body {
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    font-family: Georgia, serif;
-    font-size: 100%;
-    line-height: 1.75em;
-}
+        body {
+            background-color: #111;
+            color: white;
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, serif;
+            font-size: 100%;
+            line-height: 1.75em;
+        }
 
-header {
-    background-color: #333;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; 
-    position: relative; 
-}
+        header {
+            background-color: #111;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-header img {
-    max-width: 100%;
-    max-height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+        #banner-text {
+            text-align: center;
+        }
+
+        #banner-text .ox {
+            font-size: 2em;
+            color: #00FFFF;
+        }
+
+        #banner-text .splode {
+            font-size: 3em;
+            color: #800080;
+        }
 
         nav {
-            background-color: #333;
-            display: flex;
-            justify-content: space-around;
-            padding: 10px 0;
+            background: linear-gradient(to right, #00FFFF, #800080);
+            border-bottom: 2px solid #111;
         }
 
         nav ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
+            display: flex;
+            justify-content: space-around;
         }
 
         nav ul li {
@@ -56,25 +59,26 @@ header img {
             color: white;
             padding: 10px 20px;
             text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
         }
 
         nav ul li a:hover {
-            background-color: #555;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            background-color: #222;
         }
 
         #info {
             text-align: center;
             margin-top: 30px;
-        }
-
-        #info p {
-            font-style: italic;
-            color: gray;
+            font-size: 1.5em;
+            background: linear-gradient(to right, #00FFFF, #800080);
+            display: inline;
+            padding: 10px;
+            border-radius: 5px;
         }
 
         footer {
-            background-color: #333;
+            background-color: #111;
             color: white;
             text-align: center;
             padding: 20px 0;
@@ -83,24 +87,14 @@ header img {
         footer p {
             margin: 5px 0;
         }
-
-        footer img {
-            width: 30px;
-            height: 30px;
-            margin: 0 5px;
-        }
-
-        .social-icons {
-            background-color: rgba(255, 255, 255, 0.2);
-            padding: 10px;
-            border-radius: 5px;
-        }
     </style>
 </head>
 
 <body>
     <header>
-        <img src="images/ox'splode (1).png" alt="OX'SPLODE">
+        <div id="banner-text">
+            <span class="ox">OX</span>'<span class="splode">SPLODE</span>
+        </div>
     </header>
 
     <nav>
@@ -118,18 +112,11 @@ header img {
         <p>STEP INTO YOUR GREATNESS</p>
     </div>
 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2MhvzotOw7s?autoplay=1" frameborder="0" allowfullscreen></iframe>
+
     <footer>
-        <p>FOLLOW US HERE:</p>
-        <div class="social-icons">
-            <img src="icons/facebook.svg" alt="facebook">
-            <img src="icons/github-icon.svg" alt="github">
-            <img src="icons/instagram.svg" alt="instagram">
-            <img src="icons/tumblr.svg" alt="tumblr">
-            <img src="icons/twitter.svg" alt="twitter">
-        </div>
-        <p><small>All content copyright &copy; 2021, Ox'Splode and Mike Oxlong</small></p>
+        <p>All content copyright &copy; 2021, Ox'Splode and Mike Oxlong</p>
     </footer>
 </body>
 
 </html>
-

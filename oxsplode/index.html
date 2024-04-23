@@ -2,120 +2,118 @@
 <html>
 
 <head>
-<meta charset ="utf-8">
-<title>OX'SPLODE</title>
+    <meta charset="utf-8">
+    <title>OX'SPLODE</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, serif;
+            font-size: 100%;
+            line-height: 1.75em;
+        }
 
-<style>
-body {
-  background-color: black;
-  margin: 0 10%;
-  font-family: Georgia, serif;
-  font-size: 100%;
-  line-height: 1.75em;
-}
+        header {
+            background-image: url('images/ox'splode (1).png');
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-h1 {
-  text-align: center;
-  font-family: Georgia, serif;
-  color: white;
-  text-shadow: .05em .05em .1em lightslategray;
-  font-weight: normal;
-  text-transform: uppercase;
-  border-bottom: 1px solid #57b1dc;
-  margin-top: 30px;
-}
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
 
-#info p {
-  font-style: italic;
-  color: gray;
-}
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
 
-h1,
-h2,
-#info {
-  text-align: center;
-}
+        nav ul li {
+            display: inline;
+        }
 
-h2 {
-  color: white;
-  font-size: 1em;
-  text-transform: uppercase;
-  letter-spacing: .5em;
-}
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            text-transform: uppercase;
+        }
 
-h2+p {
-  text-align: center;
-  font-style: italic;
-}
+        nav ul li a:hover {
+            background-color: #555;
+        }
 
-dt {
-  font-weight: bold;
-  color: pink;
-}
+        #info {
+            text-align: center;
+            margin-top: 30px;
+        }
 
-footer {
-  border-top: 1px solid #57b1dc;
-  text-align: center;
-  padding-top: 1em;
-}
+        #info p {
+            font-style: italic;
+            color: gray;
+        }
 
-footer img {
-  width: 40px;
-  height: 40px;
-  margin-left: .5em;
-  margin-right: .5em;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
-}
-ul li {
-  display: inline;
-  margin-right: 20px;
-}
-</style>
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer img {
+            width: 40px;
+            height: 40px;
+            margin: 0 5px;
+        }
+    </style>
 </head>
 
 <body>
-<header>
-  <img src="images/ox'splode (1).png" alt="logo" width="200px" height="200px">
+    <header>
+        <h1>OX'SPLODE</h1>
+    </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html"> HOME </a></li>
-      <li><a href="supplements.html"> SUPPLEMENTS </a></li>
-      <li><a href="apparel.html"> APPAREL </a></li>
-      <li><a href="contact.html"> CONTACT </a></li>
-      <li><a href="about.html"> ABOUT </a></li>
-      <li><a href="reviews.html"> REVIEWS </a></li>
-    </ul>
-  </nav>
-  <h1></h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="supplements.html">SUPPLEMENTS</a></li>
+            <li><a href="apparel.html">APPAREL</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="reviews.html">REVIEWS</a></li>
+        </ul>
+    </nav>
 
-  <div id="info">
-    <p>
-      STEP INTO YOUR GREATNESS
-    </p>
-  </div>
-</header>
+    <div id="info">
+        <p>STEP INTO YOUR GREATNESS</p>
+    </div>
 
+    <footer>
+        <p>FOLLOW US HERE:</p>
+        <p>
+            <img src="icons/facebook.svg" alt="facebook">
+            <img src="icons/github-icon.svg" alt="github">
+            <img src="icons/instagram.svg" alt="instagram">
+            <img src="icons/tumblr.svg" alt="tumblr">
+            <img src="icons/twitter.svg" alt="twitter">
+        </p>
+        <p><small>All content copyright &copy; 2021, Ox'Splode and Mike Oxlong</small></p>
+    </footer>
+</body>
 
-
-
-
-  
-<br>
-<footer>
-    <p> FOLLOW US HERE: </p>
-    <p>
-<img src="icons/facebook.svg" alt="facebook">
-<img src="icons/github-icon.svg" alt="github">
-<img src="icons/instagram.svg" alt="instagram">
-<img src="icons/tumblr.svg" alt="tumblr">
-<img src="icons/twitter.svg" alt="twitter">
-  </p>
-    <p> <small>  All content copyright &copy; 2021, Ox'Splode and Mike Oxlong </small> </p>
-  </footer>
-</body>  
 </html>
+

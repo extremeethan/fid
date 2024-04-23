@@ -6,19 +6,44 @@
 <title>Black Goose Menu</title>
 
   <style>
-body { background-color: #faf2e4; margin: 0 10%; font-family: sans-serif; }
+body {
+  background-color: #faf2e4; 
+  margin: 0 10%; 
+  font-family: Georgia, serif;
+  font-size: 100%;
+  line-height: 1.75em;
+}
 h1 {
   text-align: center;
-  font-family: serif;
+  font: bold 1.5em "Marko One", Georgia, serif;
+  color: olive;
+  text-shadow: .05em .05em .1em lightslategray;
   font-weight: normal;
   text-transform: uppercase;
   border-bottom: 1px solid #57b1dc;
   margin-top: 30px;
 }
-h2 {
-  color: #d1633c;
-  font-size: 1em;
+#info p {
+  font-style: italic;
+  color: gray;
 }
+h1, h2, #info {
+  text-align: center;
+}    
+h2 {
+  color: olive;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+}
+h2 + p {
+  text-align: center;
+  font-style: italic;
+}
+dt {
+  font-weight: bold;
+  color: sienna;
+}  
 footer {
   border-top: 1px solid #57b1dc;
   text-align: center;

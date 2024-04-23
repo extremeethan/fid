@@ -107,11 +107,22 @@
             padding: 20px;
             border: 2px solid #00FFFF;
             border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 450px;
         }
 
         .product img {
             width: 200px;
             margin-bottom: 20px;
+        }
+
+        .product h3,
+        .product p,
+        .product button {
+            flex-grow: 1;
+            width: 100%;
         }
 
         .product button {
@@ -186,13 +197,13 @@
             <p>$149.99</p>
             <button>Add to Cart</button>
         </div>
-<div class="product">
+        <div class="product">
             <img src="images/hoodie3.png" alt="Vintage Hoodie">
             <h3>OX'SPLODE HOODIE VINTAGE FUNDAMENTALS</h3>
             <p>$89.99</p>
             <button>Add to Cart</button>
         </div>
-<div class="product">
+        <div class="product">
             <img src="images/zo2.jpg" alt="Lonzo Slides">
             <h3>ZO2 SLIDES</h3>
             <p>$200.00</p>

@@ -10,7 +10,7 @@
             color: white;
             margin: 0;
             padding: 0;
-            font-family: Georgia, serif;
+            font-family: 'Roboto', sans-serif;
             font-size: 100%;
             line-height: 1.75em;
         }
@@ -29,20 +29,21 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3em;
+            letter-spacing: 0.1em;
         }
 
         #banner-text .ox {
-            font-size: 2em;
-            color: #0080FF;
+            color: #0077FF;
         }
 
         #banner-text .splode {
-            font-size: 3em;
             color: #CC00FF;
         }
 
         nav {
-            background: linear-gradient(to right, #00FFFF, #800080);
+            background-color: rgba(0, 0, 0, 0.7);
             border-bottom: 2px solid #111;
         }
 
@@ -79,6 +80,13 @@
             display: inline;
             padding: 10px;
             border-radius: 5px;
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 0.1em;
+        }
+
+        iframe {
+            display: block;
+            margin: 0 auto;
         }
 
         footer {
@@ -92,13 +100,14 @@
             margin: 5px 0;
         }
     </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
 </head>
 
 <body>
     <header>
         <div id="banner-text">
-            <span class="ox">OX</span>
-            <br> '<span class="splode">SPLODE</span>
+            <span class="ox">OX</span><br>'<span class="splode">SPLODE</span>
         </div>
     </header>
 

@@ -84,9 +84,25 @@
             margin-bottom: 30px;
         }
 
-        iframe {
-            display: block;
-            margin: 0 auto;
+        #products {
+            max-width: 1200px;
+            margin: 40px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .product {
+            flex: 1;
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #00FFFF;
+            border-radius: 10px;
+        }
+
+        .product img {
+            width: 200px;
+            margin-bottom: 20px;
         }
 
         footer {
@@ -126,10 +142,24 @@
     </nav>
 
     <div id="info" class="anta-regular">
-        <p>STEP INTO YOUR GREATNESS</p>
+        <p>REVOLUTIONARY ALL-NATURAL SECRET VEGAN ULTRA-PROTEIN FORMULA</p>
     </div>
 
-  
+    <div id="products">
+        <div class="product">
+            <img src="images/bigox.jpg" alt="The Big Ox">
+            <h3>THE BIG OX</h3>
+            <p>$69.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/travelsize.png" alt="The Travel Size Ox">
+            <h3>THE TRAVEL SIZE OX</h3>
+            <p>$4.20</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
     <footer>
         <p>All content copyright &copy; 2021, Ox'Splode and Mike Oxlong</p>
     </footer>

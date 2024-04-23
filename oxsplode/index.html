@@ -17,7 +17,7 @@
 
         header {
             background-color: #111;
-            height: 200px;
+            height: 250px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -29,9 +29,9 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 3em;
-            letter-spacing: 0.1em;
+            font-family: 'Anta', sans-serif;
+            font-size: 5em;
+            letter-spacing: 0.05em;
         }
 
         #banner-text .ox {
@@ -52,11 +52,13 @@
             padding: 0;
             margin: 0;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+            align-items: center;
         }
 
         nav ul li {
             display: inline;
+            margin: 0 10px;
         }
 
         nav ul li a {
@@ -66,10 +68,13 @@
             text-transform: uppercase;
             transition: all 0.3s ease;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(to right, #00FFFF, #800080);
+            border-radius: 5px;
         }
 
         nav ul li a:hover {
             background-color: #222;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
         #info {
@@ -80,8 +85,9 @@
             display: inline;
             padding: 10px;
             border-radius: 5px;
-            font-family: 'Bebas Neue', sans-serif;
-            letter-spacing: 0.1em;
+            font-family: 'Anta', sans-serif;
+            letter-spacing: 0.05em;
+            margin-bottom: 30px;
         }
 
         iframe {
@@ -100,14 +106,17 @@
             margin: 5px 0;
         }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
 </head>
 
 <body>
     <header>
-        <div id="banner-text">
-            <span class="ox">OX</span><br>'<span class="splode">SPLODE</span>
+        <div id="banner-text" class="anta-regular">
+            <span class="ox">OX</span><span class="splode">SPLODE</span>
         </div>
     </header>
 
@@ -122,7 +131,7 @@
         </ul>
     </nav>
 
-    <div id="info">
+    <div id="info" class="anta-regular">
         <p>STEP INTO YOUR GREATNESS</p>
     </div>
 
@@ -134,3 +143,4 @@
 </body>
 
 </html>
+

@@ -84,9 +84,49 @@
             margin-bottom: 30px;
         }
 
-        iframe {
-            display: block;
-            margin: 0 auto;
+        #note {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-family: 'Anta', sans-serif;
+            letter-spacing: 0.05em;
+            margin-bottom: 20px;
+        }
+
+        #products {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .product {
+            flex: 1;
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #00FFFF;
+            border-radius: 10px;
+        }
+
+        .product img {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+
+        .product button {
+            background: linear-gradient(to right, #00FFFF, #800080);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Anta', sans-serif;
+        }
+
+        .product button:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
         footer {
@@ -114,7 +154,7 @@
         </div>
     </header>
 
-     <nav>
+    <nav>
         <ul>
             <li><a href="https://extremeethan.github.io/fid/oxsplode/index.html">HOME</a></li>
             <li><a href="https://extremeethan.github.io/fid/oxsplode/supplements.html">SUPPLEMENTS</a></li>
@@ -125,12 +165,35 @@
         </ul>
     </nav>
 
-
     <div id="info" class="anta-regular">
         <p>STEP INTO YOUR GREATNESS</p>
     </div>
 
-    
+    <div id="note" class="anta-regular">
+        <p>Show the world you're the best among them. Advertise us.</p>
+    </div>
+
+    <div id="products">
+        <div class="product">
+            <img src="images/hoodie.png" alt="Classic Hoodie">
+            <h3>OX'SPLODE HOODIE CLASSIC VERTICAL LOGO</h3>
+            <p>$99.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/hoodie2.png" alt="Big Ox Hoodie">
+            <h3>OX'SPLODE HOODIE BIG OX EDITION</h3>
+            <p>$149.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+<div class="product">
+            <img src="images/hoodie3.png" alt="Vintage Hoodie">
+            <h3>OX'SPLODE HOODIE VINTAGE FUNDAMENTALS</h3>
+            <p>$89.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
 
     <footer>
         <p>All content copyright &copy; 2021, Ox'Splode and Mike Oxlong</p>
@@ -138,3 +201,4 @@
 </body>
 
 </html>
+

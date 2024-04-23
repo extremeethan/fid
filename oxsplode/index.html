@@ -87,6 +87,19 @@
         iframe {
             display: block;
             margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        .social-media-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .social-media-icons img {
+            width: 50px;
+            margin: 0 10px;
         }
 
         footer {
@@ -99,23 +112,11 @@
         footer p {
             margin: 5px 0;
         }
-         .social-media-icons {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .social-media-icons a {
-      width: 100px;
-      display: block;
-      margin: 0 10px;
-    }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
 </head>
 
 <body>
@@ -142,10 +143,11 @@
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/2MhvzotOw7s?autoplay=1" frameborder="0" allowfullscreen></iframe>
 
-<img src="icons8-youtube-100.svg" alt="youtube">
-<img src="icons/icons8-tiktok-100.svg" alt="tiktok">
-<img src="icons/icons8-instagram-100.svg" alt="instagram">
-
+    <div class="social-media-icons">
+        <img src="icons/icons8-youtube-100.svg" alt="youtube">
+        <img src="icons/icons8-tiktok-100.svg" alt="tiktok">
+        <img src="icons/icons8-instagram-100.svg" alt="instagram">
+    </div>
     
     <footer>
         <p>All content copyright &copy; 2021, Ox'Splode and Mike Oxlong</p>
@@ -153,3 +155,4 @@
 </body>
 
 </html>
+

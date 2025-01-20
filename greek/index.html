@@ -8,46 +8,124 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+            margin: 0;
         }
+
+        .mindmap {
+            position: relative;
+            width: 1000px;
+            height: 800px;
+        }
+
         .node {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
             font-weight: bold;
-            color: #2C3E50;
-            margin-left: 20px;
         }
-        .subnode {
-            margin-left: 40px;
-            font-style: italic;
+
+        .node.central {
+            background-color: #2ecc71;
+            width: 150px;
+            height: 150px;
+            font-size: 16px;
+        }
+
+        .line {
+            position: absolute;
+            width: 2px;
+            background-color: #555;
+            transform-origin: top left;
+        }
+
+        /* Positioning the nodes */
+        .central {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .pelasgian {
+            top: 20%;
+            left: 30%;
+        }
+
+        .hesiod {
+            top: 20%;
+            left: 70%;
+        }
+
+        .modern {
+            top: 70%;
+            left: 30%;
+        }
+
+        .society {
+            top: 70%;
+            left: 70%;
+        }
+
+        /* Adding connecting lines */
+        .line.pelasgian {
+            top: 50%;
+            left: 50%;
+            height: 200px;
+            transform: rotate(-60deg);
+        }
+
+        .line.hesiod {
+            top: 50%;
+            left: 50%;
+            height: 200px;
+            transform: rotate(60deg);
+        }
+
+        .line.modern {
+            top: 50%;
+            left: 50%;
+            height: 200px;
+            transform: rotate(120deg);
+        }
+
+        .line.society {
+            top: 50%;
+            left: 50%;
+            height: 200px;
+            transform: rotate(-120deg);
         }
     </style>
 </head>
 <body>
-    <h1>Mind Map: Greek Creation Myths</h1>
-    <div class="node">Greek Creation Myths
-        <div class="subnode">Pelasgian Myth
-            <div class="subnode">Eurynome</div>
-            <div class="subnode">Ophion</div>
-            <div class="subnode">Cosmic Egg</div>
-            <div class="subnode">Dismemberment of Ophion</div>
-            <div class="subnode">Pelasgus</div>
-            <div class="subnode">Symbol: Cosmic Egg, Serpent</div>
-        </div>
-        <div class="subnode">Hesiod Myth
-            <div class="subnode">Chaos</div>
-            <div class="subnode">Gaia</div>
-            <div class="subnode">Ouranos</div>
-            <div class="subnode">Titans</div>
-            <div class="subnode">Birth of Aphrodite</div>
-            <div class="subnode">Symbol: Sickle, Dismemberment</div>
-        </div>
-        <div class="subnode">Influence of Society
-            <div class="subnode">Agricultural Society -> Female Power (Pelasgian)</div>
-            <div class="subnode">Warlike Society -> Male Power (Hesiod)</div>
-            <div class="subnode">Symbol: Transformation of society reflected in divine struggle</div>
-        </div>
-        <div class="subnode">Modern Connections
-            <div class="subnode">Troy (Movie) – Power Struggles</div>
-            <div class="subnode">Games – Influence on Video Games</div>
-        </div>
+    <div class="mindmap">
+        <!-- Central Node -->
+        <div class="node central">Greek Creation Myths</div>
+
+        <!-- Branches -->
+        <div class="line pelasgian"></div>
+        <div class="line hesiod"></div>
+        <div class="line modern"></div>
+        <div class="line society"></div>
+
+        <!-- Subnodes -->
+        <div class="node pelasgian">Pelasgian Myth</div>
+        <div class="node hesiod">Hesiod Myth</div>
+        <div class="node modern">Modern Connections</div>
+        <div class="node society">Influence of Society</div>
     </div>
 </body>
 </html>
+
